@@ -9,6 +9,7 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var counter = 0
     
     var body: some View {
         VStack(alignment: .center, spacing: 112) {
@@ -21,13 +22,13 @@ struct ContentView: View {
     }
     
     fileprivate func makeCountText() -> Text {
-        return Text("33")
+        return Text("\(counter)")
             .font(Font.system(size: 68))
     }
     
     fileprivate func makeResetButton() -> some View {
         return Button(action: {
-            print("reset button tapped")
+            self.counter = 0
         }) {
             Text("Reset")
                 .foregroundColor(.white)
@@ -41,7 +42,7 @@ struct ContentView: View {
     
     fileprivate func makeCountButton() -> some View {
         return Button(action: {
-            print("count button tapped")
+            self.counter += 1
         }) {
             Text("Count")
                 .foregroundColor(.white)
