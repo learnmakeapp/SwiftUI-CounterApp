@@ -4,6 +4,10 @@ Create a simple Counter App in SwiftUI.
 
 You will learn about `VStack`, `HStack` and `@State` property wrapper.
 
+Inline-style: 
+![alt text](images/finish-app.png "finish-app")
+
+
 Visit our YouTube video, 
 [SwiftUI Counter App](https://youtu.be/v04VfP1rOoA)
 
